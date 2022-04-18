@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<title>Task 2</title>
+<style>
+
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+#pageHeader {
+  grid-area: header;
+}
+#pageFooter {
+  grid-area: footer;
+}
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav;
+  font-size:20px; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  }
+header, footer, article, nav, div {
+  padding: 20px;
+  background: gold;
+}
+</style>
+<link rel="stylesheet" href="/slideshow.css">
+<link rel="stylesheet" href="/task2SlideShow.css">
+<body>
+  <header id="pageHeader" style="font-size:30px;"> <strong>Wonders of the World</strong> </header>
+  <article id="mainArticle" style="font-size:20px;"> <p>The Seven Wonders of the Ancient World is the oldest known list of this type, documenting the most remarkable man-made creations of classical antiquity; it was based on guidebooks popular among Hellenic sightseers and as such only includes works located around the Mediterranean rim and in the ancient Near East. The number seven was chosen because the Greeks believed it represented perfection and plenty, and because it reflected the number of planets known in ancient times (five) plus the Sun and Moon. Many similar lists have been made for other regions of the world or for the entire world, or which include natural wonders instead of man-made structures. <br> The Greek historian Herodotus (484 – c. 425 BC) and the scholar Callimachus of Cyrene (c. 305–240 BC), at the Museum of Alexandria, made early lists of seven wonders. These lists have not survived, however, except as references in other writings.</p> <br> 
+  <div>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 7</div>
+        <img src="/Great Pyramid of Giza..jpg" style="width:100%">
+        <div class="text">Great Pyramid of Giza.</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 7</div>
+        <img src="/Colossus of Rhodes..jpg" style="width:100%">
+        <div class="text">Colossus of Rhodes.</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 7</div>
+        <img src="/Hanging Gardens of Babylon..jpg" style="width:100%">
+        <div class="text">Lighthouse of Alexandria, in Alexandria, Egypt.</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 7</div>
+        <img src="/Lighthouse of Alexandria, in Alexandria, Egypt..jpg" style="width:100%">
+        <div class="text">Lighthouse of Alexandria, in Alexandria, Egypt.</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 7</div>
+        <img src="/Mausoleum at Halicarnassus, in Halicarnassus..jpg" style="width:100%">
+        <div class="text">Mausoleum at Halicarnassus, in Halicarnassus.</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 7</div>
+        <img src="/Statue of Zeus at Olympia, in Olympia, Greece..jpg" style="width:100%">
+        <div class="text">Statue of Zeus at Olympia, in Olympia, Greece.</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 7</div>
+        <img src="/Temple of Artemis at Ephesus..jpg" style="width:100%">
+        <div class="text">Temple of Artemis at Ephesus.</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+      
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+  </div>
+  </article>
+  <nav id="mainNav"><ul style="list-style-type: disc;">
+    <li> <a href="https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza">Great Pyramid of Giza.</a> </li><br>
+  <li> <a href="https://en.wikipedia.org/wiki/Colossus_of_Rhodes"> Colossus of Rhodes.</a></li><br>
+  <li> <a href="https://en.wikipedia.org/wiki/Hanging_Gardens_of_Babylon">Hanging Gardens of Babylon.</a> </li><br>
+  <li><a href="https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria"> Lighthouse of Alexandria, in Alexandria, Egypt.</a></li><br>
+  <li><a href="https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus"> Mausoleum at Halicarnassus, in Halicarnassus.</a></li><br>
+  <li><a href="https://en.wikipedia.org/wiki/Statue_of_Zeus_at_Olympia"> Statue of Zeus at Olympia, in Olympia, Greece.</a> </li><br>
+  <li><a href="https://en.wikipedia.org/wiki/Temple_of_Artemis"> Temple of Artemis at Ephesus.</a> </li>
+</ul>
+</nav>
+  <div id="siteAds">Ads <br> <br> <br>
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.adsoftheworld.com%2Fmedia%2Fintegrated%2Ftourism_australia_be_the_first&psig=AOvVaw0RAfb9POGSWcahkBk3ijze&ust=1648622447936000&source=images&cd=vfe&ved=2ahUKEwiEwqWs2-r2AhWZgmMGHVmHC5QQjhx6BAgAEAo"><img src="/tourism (4).jfif" style="width: 170px;" alt=""></a>
+    <br> <br> <br>
+
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tucsonsentinel.com%2Flocal%2Fcomments%2F040813_az_tourism%2F&psig=AOvVaw1_7KvGVVYt0jZH1WFX5fuR&ust=1648622331354000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCNiW_6Hd6vYCFQAAAAAdAAAAABAD"><img src="/images.jfif" style="width: 100;" alt=""></a> <br> <br> <br>
+
+    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.advertgallery.com%2Fnewspaper%2Fkerala-tourism-a-change-of-air-ad%2F&psig=AOvVaw1_7KvGVVYt0jZH1WFX5fuR&ust=1648622331354000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCNiW_6Hd6vYCFQAAAAAdAAAAABAV"> <img src="/download (4).jfif" alt=""></a>
+  </div>
+  <div id="xyz"></div>
+  <div class="abc"></div>
+  <div class="abc"></div>
+  <footer id="pageFooter">The amazing works of art and architecture known as the Seven Wonders of the Ancient World serve as a testament to the ingenuity, imagination and sheer hard work of which human beings are capable.</footer>
+</body>
