@@ -10,13 +10,14 @@
 
 - 🤝 I’m looking for help with System design, AWS, Android app development.
 
-- 📝 I regularly write articles on [developerscult.blogspot.com](developerscult.blogspot.com)
+- 📝 I regularly write articles on [developerscult.blogspot.com](https://developerscult.blogspot.com/)
 
 - 💬 Ask me about Java, DSA, Springboot
 
 - 📫 How to reach me s.joshi41199@gmail.com
 
-<h3 align="left">Connect with me: s.joshi41199@gmail.com</h3>
+## 🌐 Socials:
+ [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/itsshreyajoshi) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/shreyajoshi41199) [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/18770573/shreya-joshi) 
 <p align="left">
 </p>
 
