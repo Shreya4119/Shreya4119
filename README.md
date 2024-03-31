@@ -10,7 +10,7 @@
 
 - 🤝 I’m looking for help with System design, AWS, Android app development.
 
-- 📝 I regularly write articles on [codeitsimplified.blogspot.com](developerscult.blogspot.com)
+- 📝 I regularly write articles on [developerscult.blogspot.com](developerscult.blogspot.com)
 
 - 💬 Ask me about Java, DSA, Springboot
 
