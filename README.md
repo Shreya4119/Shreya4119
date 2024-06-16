@@ -2,7 +2,7 @@
 <h1 align="center">Hi 👋, I'm Shreya Joshi</h1>
 <h3 align="center">A Java full-stack developer</h3>
 <img align="right" alt="Coding" width="400" src="https://user-images.githubusercontent.com/74038190/219925452-a3b0d96d-6b65-45ee-b68a-b2208011b26c.jpg">
-- 🔭 I’m currently working on an enterprise level payroll management application which processes and formats large amount of payroll data for multiple clients at a time, keeps track record and generate reports.
+- 🔭 I’m currently working on an payroll management web application which processes and formats large amount of payroll data for multiple clients at a time, keeps track record and generate reports.
 
 - 🌱 I’m currently learning AWS, Android application development.
 
